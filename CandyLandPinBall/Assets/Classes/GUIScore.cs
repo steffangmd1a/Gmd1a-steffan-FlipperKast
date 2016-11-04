@@ -66,5 +66,19 @@ public class GUIScore : MonoBehaviour {
 
         }
 
+        if (bool3 == true)
+        {
+
+            GUI.DrawTexture(new Rect(120, 0, 50, 50), plaatje);
+
+        }
+
+    }
+
+    public void Damage(int damage)
+    {
+
+        levens += damage;
+
     }
 }
