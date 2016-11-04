@@ -30,6 +30,27 @@ public class Launcher : MonoBehaviour
 
         }
 
+        if(pressed == true && powerUp < powerUpMax)
+        {
+
+            powerUp += Time.deltaTime;
+
+        }
+
+    }
+
+    void OnTriggerExit(Collider Player)
+    {
+
+        aanraking = false;
+
+    }
+
+    void OnTriggerEnter(Collider Player)
+    {
+
+        aanraking = true;
+
     }
 
 }
